@@ -2,7 +2,10 @@
 
 import React from 'react';
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import {
+  Route,
+  Routes,
+} from 'react-router-dom';
 import WebHeader from './components/pages/WebHeader';
 import WebBooks from './components/pages/WebBooks';
 import WebCategories from './components/pages/WebCategories';

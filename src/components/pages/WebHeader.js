@@ -1,5 +1,6 @@
 // WebHeader.js
 
+import { Link } from 'react-router-dom';
 import '../styles/WebHeader.css';
 
 function WebHeader() {
@@ -10,9 +11,13 @@ function WebHeader() {
       </h1>
       <ul>
         <li>|</li>
-        <li><a href="/">Books</a></li>
+        <li>
+          <Link to="/">Books</Link>
+        </li>
         <li>|</li>
-        <li><a href="/WebCategories">Categories</a></li>
+        <li>
+          <Link to="/WebCategories">Categories</Link>
+        </li>
         <li>|</li>
       </ul>
     </div>
