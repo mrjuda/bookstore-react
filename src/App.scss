@@ -1,0 +1,22 @@
+// App.scss
+
+.App {
+  text-align: center;
+}
+
+button {
+  background: #ddd;
+  border: none;
+  border-radius: 0.1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+button:active {
+  background-color: #bbb;
+  font-weight: 700;
+}
