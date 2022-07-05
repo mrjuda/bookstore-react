@@ -5,7 +5,12 @@ import '../styles/WebCategories.css';
 function WebCategories() {
   return (
     <div className="cat-container">
-      <h1>Here go the Categories</h1>
+      <button type="button" value="CheckStatus" className="check-status">Check Status</button>
+      <span className="quote">
+        If you only read the books that everyone else is reading,
+        you can only think what everyone else is thinking.
+        ― Haruki Murakami
+      </span>
     </div>
   );
 }

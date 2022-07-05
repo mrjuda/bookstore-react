@@ -1,10 +1,11 @@
 // BookContainer.js
 
 import '../styles/BookContainer.css';
+import Book from './Book';
 
 const BookContainer = () => (
   <ul className="book-container">
-    <h1>Here go the books</h1>
+    <Book />
   </ul>
 );
 
