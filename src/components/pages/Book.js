@@ -1,26 +1,25 @@
 // Book.js
 
 import '../styles/Book.css';
+import PropTypes from 'prop-types';
 
-const Book = () => (
-  <div className="book-div">
+const Book = ({ book }) => {
+  const { title, author } = book;
+  return (
     <li className="book">
-      <span className="title">The Lord of The Rings (JRR Tolkien)</span>
+      <span className="title">{ title }</span>
+      <span className="author">{ author }</span>
       <button type="button">Delete</button>
     </li>
-    <li className="book">
-      <span className="title">O Auto da Compadecida (Ariano Suassuna)</span>
-      <button type="button">Delete</button>
-    </li>
-    <li className="book">
-      <span className="title">Mininos Sabidos (J. Teixeira)</span>
-      <button type="button">Delete</button>
-    </li>
-    <li className="book">
-      <span className="title">Crime and Punishment (Fiodor Dostoyevsky)</span>
-      <button type="button">Delete</button>
-    </li>
-  </div>
-);
+  );
+};
+
+Book.propTypes = {
+  book: PropTypes.shape({
+    title: PropTypes.string,
+    author: PropTypes.string,
+    id: PropTypes.number,
+  }).isRequired,
+};
 
 export default Book;
